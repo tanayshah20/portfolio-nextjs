@@ -35,14 +35,6 @@ export function MailIcon(props) {
   );
 }
 
-export function DownloadIcon(props) {
-  return (
-    <svg {...base} {...props}>
-      <path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" />
-    </svg>
-  );
-}
-
 export function PinIcon(props) {
   return (
     <svg {...base} {...props}>

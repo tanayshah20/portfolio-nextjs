@@ -1,13 +1,13 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { profile, links } from '@/data/resume';
-import { DownloadIcon, GitHubIcon, LinkedInIcon, MailIcon, PinIcon } from './Icons';
+import { GitHubIcon, LinkedInIcon, MailIcon, PinIcon } from './Icons';
 import { prefersReducedMotion } from './ui';
 
 // Each hero line animates in after the previous one (see .hero-step in globals.css).
 const step = (i) => ({ '--i': i });
 
-export default function Hero({ hasResume }) {
+export default function Hero() {
   const canvasRef = useRef(null);
   useSignalWaves(canvasRef);
 
@@ -42,17 +42,7 @@ export default function Hero({ hasResume }) {
           </p>
 
           <div className="hero-actions hero-step" style={step(5)}>
-            {hasResume ? (
-              <>
-                <a href={`/${profile.resumeFile}`} className="btn btn-primary" download>
-                  <DownloadIcon width={18} height={18} />
-                  Download Résumé
-                </a>
-                <a href="#contact" className="btn btn-ghost">Get in touch</a>
-              </>
-            ) : (
-              <a href="#contact" className="btn btn-primary">Get in touch</a>
-            )}
+            <a href="#contact" className="btn btn-primary">Get in touch</a>
 
             <div className="social-links">
               <a href={links.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

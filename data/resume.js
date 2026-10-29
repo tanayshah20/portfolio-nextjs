@@ -21,8 +21,6 @@ export const profile = {
     { label: 'At Ericsson since', value: '2022 (co-op, internships, full-time)' },
     { label: 'Education', value: 'B.Sc. CS Honours, Carleton — Distinction' },
   ],
-  // The Download Résumé button appears automatically when public/<resumeFile> exists.
-  resumeFile: 'Tanay_Shah_Resume.pdf',
   // Lines ticked off by the hero terminal.
   terminalChecks: ['java', 'test_automation', 'ci_cd', '5g_hardware'],
   // Strip under the hero. "3+ years": Sep 2022–Aug 2023 plus May 2024–present.
